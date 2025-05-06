@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Shake Esfera - Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-50 flex">
+    <!-- Hamburger Menu Toggle for Mobile -->
+    <input type="checkbox" id="menu-toggle" class="hidden">
+    <label for="menu-toggle" class="md:hidden">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+    </label>
+
+    <!-- Sidebar Navigation -->
+    <aside class="fixed top-0 left-0 h-screen w-24 bg-pink-500 text-white flex flex-col items-center py-4 space-y-6">
+        <a href="#shakes" class="flex flex-col items-center hover:bg-pink-600 p-2 rounded">
+            <img src="shlse.jpg" alt="Shakes" class="w-12 h-12 object-cover rounded-full mb-1">
+            <span class="text-sm">Shakes</span>
+        </a>
+        <a href="#sandwiches" class="flex flex-col items-center hover:bg-pink-600 p-2 rounded">
+            <img src="slse.jpg" alt="Sandwiches" class="w-12 h-12 object-cover rounded-full mb-1">
+            <span class="text-sm">Sandwiches</span>
+        </a>
+        <a href="#maggi" class="flex flex-col items-center hover:bg-pink-600 p-2 rounded">
+            <img src="mlse.png" alt="Maggi" class="w-12 h-12 object-cover rounded-full mb-1">
+            <span class="text-sm">Maggi</span>
+        </a>
+        <a href="#sides" class="flex flex-col items-center hover:bg-pink-600 p-2 rounded">
+            <img src="flse.jpg" alt="Sides" class="w-12 h-12 object-cover rounded-full mb-1">
+            <span class="text-sm">Sides</span>
+        </a>
+        <a href="#burgers" class="flex flex-col items-center hover:bg-pink-600 p-2 rounded">
+            <img src="blse.jpg" alt="Burgers" class="w-12 h-12 object-cover rounded-full mb-1">
+            <span class="text-sm">Burgers</span>
+        </a>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="flex-1 ml-24">
+        <!-- Header -->
+        <header class="bg-blue-600 text-white p-4 flex items-center justify-center">
+            <img src="lse.png" alt="La Shake Esfera Logo" class="h-16">
+        </header>
+
+        <!-- Menu Section -->
+        <main class="container mx-auto p-6">
+            <!-- Shakes -->
+            <section id="shakes" class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Shakes</h2>
+
+                <!-- Thick Shakes -->
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Thick Shakes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coco</h4>
+                        <p class="text-gray-600">Chilled cocoa shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coco With Chips</h4>
+                        <p class="text-gray-600">Chilled cocoa shake with chips. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coffee</h4>
+                        <p class="text-gray-600">Classic cold coffee shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹100</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coffee With Chips</h4>
+                        <p class="text-gray-600">Cold coffee with chips. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coffee With Oreo</h4>
+                        <p class="text-gray-600">Cold coffee with Oreo bits. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coffee With Kit Kat</h4>
+                        <p class="text-gray-600">Cold coffee with Kit Kat crunch. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cold Coffee With Brownie</h4>
+                        <p class="text-gray-600">Cold coffee with brownie chunks. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Vanilla Shake</h4>
+                        <p class="text-gray-600">Classic creamy vanilla shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Blue Berry Tongue Twister</h4>
+                        <p class="text-gray-600">Refreshing blueberry shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Pineapple Shake</h4>
+                        <p class="text-gray-600">Tangy pineapple-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Blackcurrant Shake</h4>
+                        <p class="text-gray-600">Sweet blackcurrant-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cranberry Shake</h4>
+                        <p class="text-gray-600">Tart cranberry-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Romantic Rose Shake</h4>
+                        <p class="text-gray-600">Floral rose-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Thanda Thandai Shake</h4>
+                        <p class="text-gray-600">Traditional thandai-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Butterscotch Tongue Twister</h4>
+                        <p class="text-gray-600">Sweet butterscotch shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Caramel Shake</h4>
+                        <p class="text-gray-600">Rich caramel-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Pan Masala Tongue Twister</h4>
+                        <p class="text-gray-600">Unique pan masala-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Banana Shake</h4>
+                        <p class="text-gray-600">Creamy banana-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹130</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Chikoo Shake</h4>
+                        <p class="text-gray-600">Sweet chikoo-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹130</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Strawberry Shake</h4>
+                        <p class="text-gray-600">Fresh strawberry-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kiwi Shake</h4>
+                        <p class="text-gray-600">Tangy kiwi-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mango Shake</h4>
+                        <p class="text-gray-600">Sweet mango-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Custard Apple Shake</h4>
+                        <p class="text-gray-600">Creamy custard apple shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Jamun Shake</h4>
+                        <p class="text-gray-600">Tart jamun-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Green Apple Shake</h4>
+                        <p class="text-gray-600">Crisp green apple shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Litchi Shake</h4>
+                        <p class="text-gray-600">Sweet litchi-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Bananas Chickoo Shake</h4>
+                        <p class="text-gray-600">Banana and chikoo blend. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Bananas Shake</h4>
+                        <p class="text-gray-600">Chocolate and banana mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Butter Banana Thick Shake</h4>
+                        <p class="text-gray-600">Butter and banana thick shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kiwi Berry Shake</h4>
+                        <p class="text-gray-600">Kiwi and berry mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mango Berry Shake</h4>
+                        <p class="text-gray-600">Mango and berry blend. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Fresh Coco Nut Shake</h4>
+                        <p class="text-gray-600">Fresh coconut shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mix Fruits Thick Shake</h4>
+                        <p class="text-gray-600">Blend of mixed fruits. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mix Fruit with Dry Fruits Thick Shake</h4>
+                        <p class="text-gray-600">Mixed fruits with dry fruits. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹190</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Official Oreo</h4>
+                        <p class="text-gray-600">Classic Oreo shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kit Kat</h4>
+                        <p class="text-gray-600">Kit Kat-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Chips</h4>
+                        <p class="text-gray-600">Chocolate chip shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Oreo Chips</h4>
+                        <p class="text-gray-600">Oreo and chips mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Melody Thick Shake</h4>
+                        <p class="text-gray-600">Melody chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Latte Thick Shake</h4>
+                        <p class="text-gray-600">Chocolate latte shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Chickoo Chocolate Thick Shake</h4>
+                        <p class="text-gray-600">Chikoo and chocolate blend. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Berry</h4>
+                        <p class="text-gray-600">Chocolate and berry mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Munch Mania</h4>
+                        <p class="text-gray-600">Munch chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mint Oreo</h4>
+                        <p class="text-gray-600">Mint and Oreo shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Oreo Thick Shake</h4>
+                        <p class="text-gray-600">A refreshing milkshake prepared with nuts, oreo crumbs and wholesome milk - perfect treat. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Hide N Seek</h4>
+                        <p class="text-gray-600">Hide & Seek biscuit shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Crunch</h4>
+                        <p class="text-gray-600">Crunchy chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Nutella</h4>
+                        <p class="text-gray-600">Nutella-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Snickers</h4>
+                        <p class="text-gray-600">Snickers-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kaju Chocolate Thick Shake</h4>
+                        <p class="text-gray-600">Cashew and chocolate blend. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">M and M Choco</h4>
+                        <p class="text-gray-600">M&M chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">M and M Peanut</h4>
+                        <p class="text-gray-600">M&M peanut shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Tangy Chocolate</h4>
+                        <p class="text-gray-600">Tangy chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Bounty Thick Shake</h4>
+                        <p class="text-gray-600">Bounty chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Silky Silk</h4>
+                        <p class="text-gray-600">Silk chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Ferrero Rocher</h4>
+                        <p class="text-gray-600">Luxurious Ferrero Rocher shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹210</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mint Chocolate</h4>
+                        <p class="text-gray-600">Mint and chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Royal Chocolate Thick Shake</h4>
+                        <p class="text-gray-600">Rich royal chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹200</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Angry Almond</h4>
+                        <p class="text-gray-600">Almond-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Peanut Butter</h4>
+                        <p class="text-gray-600">Peanut butter shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kaju Badam</h4>
+                        <p class="text-gray-600">Cashew and almond blend. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kaju Anjeer</h4>
+                        <p class="text-gray-600">Cashew and fig shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Kaju Gulkand</h4>
+                        <p class="text-gray-600">Cashew and gulkand shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Badam Anjeer</h4>
+                        <p class="text-gray-600">Almond and fig shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Creamy Kaju Thick Shake</h4>
+                        <p class="text-gray-600">Creamy cashew shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Walnut Honey</h4>
+                        <p class="text-gray-600">Walnut and honey shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Badam Pista</h4>
+                        <p class="text-gray-600">Almond and pistachio shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Royal Dry Fruit Thick Shake</h4>
+                        <p class="text-gray-600">Rich dry fruit shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹180</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Creamy Kaju</h4>
+                        <p class="text-gray-600">Creamy cashew shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Strawberry</h4>
+                        <p class="text-gray-600">Strawberry with cheese twist. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Pineapple</h4>
+                        <p class="text-gray-600">Pineapple with cheese twist. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Blueberry</h4>
+                        <p class="text-gray-600">Blueberry with cheese twist. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Mango</h4>
+                        <p class="text-gray-600">Mango with cheese twist. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Chocolate</h4>
+                        <p class="text-gray-600">Chocolate with cheese twist. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Bubblegum Thickshake</h4>
+                        <p class="text-gray-600">Fun bubblegum-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Signature Thick Shake</h4>
+                        <p class="text-gray-600">House special thick shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Broreo Thick Shake</h4>
+                        <p class="text-gray-600">Brownie and Oreo mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Creamy Oreo Thick Shake</h4>
+                        <p class="text-gray-600">A refreshing milkshake prepared with nuts, oreo crumbs and wholesome milk - perfect treat. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Star Fudge Thick Shake</h4>
+                        <p class="text-gray-600">Fudge and star candy shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Oreo Nutella Thick Shake</h4>
+                        <p class="text-gray-600">Oreo and Nutella mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Oreo Pie Thick Shake</h4>
+                        <p class="text-gray-600">Oreo pie-inspired shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">American Thick Shake</h4>
+                        <p class="text-gray-600">Classic American-style shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Fresh Pan Thick Shake</h4>
+                        <p class="text-gray-600">Pan-flavored thick shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Caramel Banana Thick Shake</h4>
+                        <p class="text-gray-600">Caramel and banana mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Roasted Almond Carnival Thick Shake</h4>
+                        <p class="text-gray-600">Roasted almond shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Rajwadi Rajbhog Thick Shake</h4>
+                        <p class="text-gray-600">Royal Rajbhog-flavored shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Golden Thick Shake</h4>
+                        <p class="text-gray-600">Golden-flavored thick shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                </div>
+
+                <!-- Brownie Mingles -->
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Brownie Mingles</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Virgin Brownie</h4>
+                        <p class="text-gray-600">Simple combination of pure milk cream with crushed brownie and vanilla base. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Brownie</h4>
+                        <p class="text-gray-600">Perfect for the one who loves the combination of brownie with dark chocolate. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Fudge Brownie</h4>
+                        <p class="text-gray-600">Fudge and brownie mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Brownie Caramel</h4>
+                        <p class="text-gray-600">Caramel and brownie combination. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Choco Brownie</h4>
+                        <p class="text-gray-600">Combination of brownie crushed with the chocolate based thickshake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mocha Brownie</h4>
+                        <p class="text-gray-600">Combination of balanced flavour of coffee and brownie crush. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheesy Brownie</h4>
+                        <p class="text-gray-600">Brownie with a cheesy twist. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Butter Brownie</h4>
+                        <p class="text-gray-600">Butter and brownie mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Red Velvet Brownie</h4>
+                        <p class="text-gray-600">Red velvet and brownie mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Velvet Nutella Thick Shake</h4>
+                        <p class="text-gray-600">Red velvet and Nutella mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹180</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Bourn Brownie Thick Shake</h4>
+                        <p class="text-gray-600">Bournville and brownie mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Virgin Bourn Brownie Thick Shake</h4>
+                        <p class="text-gray-600">Virgin Bournville and brownie mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                </div>
+
+                <!-- Dark Chocolate -->
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Dark Chocolate</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Chips</h4>
+                        <p class="text-gray-600">Dark chocolate with chips. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Born</h4>
+                        <p class="text-gray-600">Dark chocolate Bournville shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Kit Kat</h4>
+                        <p class="text-gray-600">Dark chocolate with Kit Kat. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Bournville</h4>
+                        <p class="text-gray-600">Rich Bournville shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹180</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Hazzel</h4>
+                        <p class="text-gray-600">Dark chocolate with hazelnut. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Nutella</h4>
+                        <p class="text-gray-600">Dark chocolate with Nutella. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹180</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Belgium</h4>
+                        <p class="text-gray-600">Belgian dark chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹190</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Lindt</h4>
+                        <p class="text-gray-600">Lindt dark chocolate shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹200</p>
+                    </div>
+                </div>
+
+                <!-- Coffee Mania -->
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Coffee Mania</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Thick Coffee Shake</h4>
+                        <p class="text-gray-600">Rich coffee shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Thick Coffee With Chips</h4>
+                        <p class="text-gray-600">Coffee shake with chips. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹140</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Tangy Coffee Thick Shake</h4>
+                        <p class="text-gray-600">Tangy coffee shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹140</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Dark Coffee Chocolate Thick Shake</h4>
+                        <p class="text-gray-600">Dark chocolate and coffee mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Coffee Bite Thick Shake</h4>
+                        <p class="text-gray-600">Coffee bite candy shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹260</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Creamy Coffee Thick Shake</h4>
+                        <p class="text-gray-600">Creamy coffee shake. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Caramel Coffee Thick Shake</h4>
+                        <p class="text-gray-600">Caramel and coffee mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Coffee Hazelnut Thick Shake</h4>
+                        <p class="text-gray-600">Coffee and hazelnut mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Coffee Nutella Thick Shake</h4>
+                        <p class="text-gray-600">Coffee and Nutella mix. 200ml.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sandwiches -->
+            <section id="sandwiches" class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Sandwiches</h2>
+
+                <!-- Regular Sandwiches -->
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Regular Sandwiches</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Veg Sandwich</h4>
+                        <p class="text-gray-600">Classic vegetable sandwich with fresh veggies.</p>
+                        <p class="text-pink-600 font-bold">₹80</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Veg Grilled Sandwich</h4>
+                        <p class="text-gray-600">Grilled sandwich with fresh vegetables.</p>
+                        <p class="text-pink-600 font-bold">₹90</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Veg Cheese Sandwich</h4>
+                        <p class="text-gray-600">Vegetable sandwich with cheese.</p>
+                        <p class="text-pink-600 font-bold">₹90</p>
+
+
+
+
+
+
+                        
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Veg Cheese Grilled Sandwich</h4>
+                        <p class="text-gray-600">Grilled vegetable sandwich with cheese.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Chutney Sandwich</h4>
+                        <p class="text-gray-600">Cheese sandwich with chutney.</p>
+                        <p class="text-pink-600 font-bold">₹90</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Chutney Grilled Sandwich</h4>
+                        <p class="text-gray-600">Grilled cheese sandwich with chutney.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Grilled Sandwich</h4>
+                        <p class="text-gray-600">Classic grilled cheese sandwich.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Chilli Garlic Sandwich</h4>
+                        <p class="text-gray-600">Cheese sandwich with chili and garlic flavors.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Corn Capsicum Sandwich</h4>
+                        <p class="text-gray-600">Sandwich with corn and capsicum filling.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mexican Sandwich [2 Layer]</h4>
+                        <p class="text-gray-600">Two-layer sandwich with Mexican flavors.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Sandwich</h4>
+                        <p class="text-gray-600">Simple cheese sandwich.</p>
+                        <p class="text-pink-600 font-bold">₹90</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Chocolate Sandwich</h4>
+                        <p class="text-gray-600">Sweet cheese and chocolate sandwich.</p>
+                        <p class="text-pink-600 font-bold">₹100</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Pineapple Sandwich</h4>
+                        <p class="text-gray-600">Cheese sandwich with pineapple chunks.</p>
+                        <p class="text-pink-600 font-bold">₹100</p>
+                    </div>
+                </div>
+
+                <!-- Club Sandwiches -->
+                <h3 class="text-xl font-semibold mb-2 text-blue-600">Club Sandwiches</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Mexican Club Sandwich</h4>
+                        <p class="text-gray-600">Stuffed with our special Mexican sauce, beans, cabbage, capsicum, chili onion, and some spices.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Exotic Club Sandwich</h4>
+                        <p class="text-gray-600">Stuffed with our special sauce, marinated veggies, olive, jalapeno, herbs, and spices.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Veg Cheese Club Sandwich</h4>
+                        <p class="text-gray-600">Veggies, cheese, and filled aloo masala with herbs.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">American Club Sandwich</h4>
+                        <p class="text-gray-600">Bell peppers, cabbage, onion, American corn, marinated with cheese and American pesto.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Junglee Paneer Club Sandwich</h4>
+                        <p class="text-gray-600">Marinated paneer in jungle sauce with Indian veggies, topped with herbs and spices.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">L S S Club Mania</h4>
+                        <p class="text-gray-600">Stuffed with our special cheesy sauce, veggies, and spice with herbs.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Italiano Spezie Club Sandwich</h4>
+                        <p class="text-gray-600">Spicy stuffed veggies in Italian pesto and herbs.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Scammy Paneer Club Sandwich</h4>
+                        <p class="text-gray-600">Spicy marinated paneer in scammy sauce and dressed with cheese.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Formaggio Club Sandwich</h4>
+                        <p class="text-gray-600">Fully loaded cheesy sauce and veggies, topped with white sauce and herbs.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheesy Nutella Club Sandwich</h4>
+                        <p class="text-gray-600">New! Stuffed with Nutella spread and cheese.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Five Cheese Farm Club Sandwich</h4>
+                        <p class="text-gray-600">Fully loaded with liquid cheese and our secret ingredients.</p>
+                        <p class="text-pink-600 font-bold">₹170</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Tandoori Paneer Sandwich</h4>
+                        <p class="text-gray-600">Fully loaded with liquid cheese and our secret ingredients.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Maggi -->
+            <section id="maggi" class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Maggi</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Butter Maggi</h3>
+                        <p class="text-gray-600">Classic Maggi with butter.</p>
+                        <p class="text-pink-600 font-bold">₹100</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Cheese Maggi</h3>
+                        <p class="text-gray-600">Maggi with melted cheese.</p>
+                        <p class="text-pink-600 font-bold">₹100</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Veg Cheese Maggi</h3>
+                        <p class="text-gray-600">Maggi with veggies and cheese.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Veg Butter Cheese Maggi</h3>
+                        <p class="text-gray-600">Maggi with veggies, butter, and cheese.</p>
+                        <p class="text-pink-600 font-bold">₹140</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Veg Butter Maggi</h3>
+                        <p class="text-gray-600">Maggi with veggies and butter.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Veg Schezwan Tadka Maggi</h3>
+                        <p class="text-gray-600">Maggi with veggies and Schezwan spices.</p>
+                        <p class="text-pink-600 font-bold">₹140</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sides -->
+            <section id="sides" class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Sides</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Maggi Masala Fries</h4>
+                        <p class="text-gray-600">Fries with Maggi masala seasoning.</p>
+                        <p class="text-pink-600 font-bold">₹130</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Italian Fries</h4>
+                        <p class="text-gray-600">Loaded with some pizza topping sauce, olives, jalapeno, and Italian herbs.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Masala Makhani Fries</h4>
+                        <p class="text-gray-600">Fries with masala makhani sauce.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Salsa Schezwan Fries</h4>
+                        <p class="text-gray-600">Fries with salsa and Schezwan sauce.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Tandoori Fries</h4>
+                        <p class="text-gray-600">Bestseller! Peri peri fries loaded with cheese cream sauce and tandoori sauce with mix spices.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheesy Schezwan Fries</h4>
+                        <p class="text-gray-600">Fries with cheese and Schezwan sauce.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Desh Videsh Fries</h4>
+                        <p class="text-gray-600">Fries with a fusion of Indian and global flavors.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Peri Peri Fries [Serves 1]</h4>
+                        <p class="text-gray-600">Bestseller! Crispy fries with peri peri seasoning.</p>
+                        <p class="text-pink-600 font-bold">₹130</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Schezwan Fries</h4>
+                        <p class="text-gray-600">Fries with Schezwan seasoning.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Chilli and Chilli Fries</h4>
+                        <p class="text-gray-600">Spicy fries with chili seasoning.</p>
+                        <p class="text-pink-600 font-bold">₹150</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Cheese Mayo Fries</h4>
+                        <p class="text-gray-600">Peri peri fries loaded with cheese cream sauce and sweet cream mayo.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Smoky BBQ Fries</h4>
+                        <p class="text-gray-600">Fries with smoky BBQ sauce.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Salsa Mayo Fries</h4>
+                        <p class="text-gray-600">Fries with salsa and mayo topping.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Fire and Flames Fries</h4>
+                        <p class="text-gray-600">Extra spicy fries with fiery seasoning.</p>
+                        <p class="text-pink-600 font-bold">₹160</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="text-lg font-semibold">Salted Fries</h4>
+                        <p class="text-gray-600">Classic salted French fries.</p>
+                        <p class="text-pink-600 font-bold">₹110</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Burgers -->
+            <section id="burgers" class="mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-blue-700">Burgers</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Peri Peri Burger</h3>
+                        <p class="text-gray-600">Spicy peri peri patty with fresh veggies.</p>
+                        <p class="text-pink-600 font-bold">₹120</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">Aloo Tikki Burger</h3>
+                        <p class="text-gray-600">Crispy aloo tikki with tangy sauce.</p>
+                        <p class="text-pink-600 font-bold">₹100</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h3 class="text-lg font-semibold">American Burger</h3>
+                        <p class="text-gray-600">Classic burger with cheese and lettuce.</p>
+                        <p class="text-pink-600 font-bold">₹130</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-blue-600 text-white p-4 text-center">
+            <p>© 2025 La Shake Esfera. All rights reserved.</p>
+            <p>H 1, Sujata Flats, Gate 6, Civil Hospital Road, Shahibagh, Ahmedabad</p>
+        </footer>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
